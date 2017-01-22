@@ -1,0 +1,7 @@
+mixin top-h2(title,label,description)
+    .c-heading--top-h2
+        h2.c-heading--top-h2_title=title
+        .c-heading--top-h2_border
+        p.c-heading--top-h2_titleEnglish=label
+        if description
+            p.c-heading--top-h2_description !{description.trim().replace(/\n/g, '<br/>')}

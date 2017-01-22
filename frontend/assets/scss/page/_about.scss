@@ -1,0 +1,124 @@
+// 会社概要
+//
+// Styleguide 23.0
+
+// 会社概要
+//
+// aタグ
+//
+// Styleguide 23.1
+
+// 会社情報
+//
+//
+//
+// Markup:
+// .p-companyProfile
+//   table.p-companyProfile_table
+//     tr
+//       td.p-companyProfile_label 会社名
+//       td.p-companyProfile_info 株式会社 chatbox
+//     tr
+//       td.p-companyProfile_label 所在地
+//       td.p-companyProfile_info 〒541-0048 大阪市中央区瓦町3-2-10 エスティメゾン瓦町 805
+//     tr
+//       td.p-companyProfile_label 創業
+//       td.p-companyProfile_info 2014年 10月 2日
+//     tr
+//       td.p-companyProfile_label 資本金
+//       td.p-companyProfile_info 30万
+//     tr
+//       td.p-companyProfile_label 事業内容
+//       td.p-companyProfile_info Web制作 / IT教育
+//     tr
+//       td.p-companyProfile_label 代表
+//       td.p-companyProfile_info 後藤知宏
+//     tr
+//       td.p-companyProfile_label 従業員数
+//       td.p-companyProfile_info 3名
+//   .p-companyProfile_buttonArea
+//     a.p-companyProfile_button.c-button--borderRed--small(href="#") Mapをみる
+//
+// Styleguide 23.1.1
+
+.p-companyProfile {
+  &_tableTr {
+    display: table;
+  }
+  &_label, &_info {
+    display: table-cell;
+  }
+  &_label {
+    font-weight: bold;
+    width: 6rem;
+    line-height: 2.5rem;
+  }
+  &_address {
+    display: inline-block;
+    line-height: 2.5rem;
+    @include mediaSp {
+      display: block;
+    }
+  }
+  &_button {
+    margin-left: 1rem;
+    @include mediaSp {
+      margin-left: 0;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+// アクセス
+//
+//
+//
+// Markup:
+//.p-accesss
+//  <div id="map" style="width:100%;height:400px;"></div>
+//  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDl10NHGUS33kEc-XP4ItJyTsSOUX3S8PQ">
+//  </script>
+//
+//  .p-access_info
+//    .p-access_infoTitle 株式会社chatbox
+//    .p-access_infoText
+//    |〒541-0048
+//    br
+//    |大阪市中央区瓦町3-2-10 エスティメゾン瓦町 805
+//
+//  .p-access_info
+//    .p-access_infoTitle 最寄り駅
+//    .p-access_infoText
+//    |大阪市営地下鉄御堂筋線「本町」駅より徒歩5分
+//    br
+//    |京阪電車「淀屋橋」駅より徒歩10分
+//
+//  a.p-access_button.c-button--borderRed(href="#") Google Mapで開く
+//
+// Styleguide 23.1.2
+.p-access {
+  &_infoArea{
+    display: flex;
+    justify-content: space-between;
+  }
+  &_info {
+    width: 45%;
+    padding-top: 1rem;
+    line-height: 1.5rem;
+  }
+  &_infoTitle {
+    font-weight: bold;
+  }
+  &_button {
+    margin-top: 20px;
+  }
+}
+
+.p-aboutProfileArea {
+  padding-bottom: 40px;
+}
+
+.p-aboutAccessArea {
+  padding-bottom: 40px;
+}

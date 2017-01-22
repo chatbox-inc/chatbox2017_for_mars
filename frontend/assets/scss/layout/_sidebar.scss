@@ -1,0 +1,166 @@
+// サイドバー
+//
+// Styleguide 11.0
+
+// サイドバー
+//
+// サイドバー
+//
+// Styleguide 11.1
+
+//　サイドバー向けのコンテナ
+.l-sidebarContainer{
+  position: relative;
+}
+
+// サイドバー
+//
+//
+//
+// Markup:
+// .l-sidebar
+//   .l-sidebar_shareArea
+//     p.l-sidebar_shareTitle SHARE
+//     a.l-sidebar_twitter(href="#") twitter
+//     a.l-sidebar_facebook(href="#") facebook
+//   .l-sidebar_eventNewsArea
+//     .l-sidebar_sectionLabel EVENT & NEWS
+//     a.l-sidebar_article(href="#")
+//       img.l-sidebar_articleImage(src="http://placehold.it/30x30")
+//       .l-sidebar_articleLabel.c-label--event イベント
+//       .l-sidebar_articleDate 2016年9月16日
+//       .l-sidebar_articleTitle 平成28年台風第10号による被害を受けられた皆様へ
+//       .l-sidebar_articleDescription 平成28年台風第10号による被害を受けられた皆様へ平成28年台風第10号による被害を受けられた皆様へ
+//     a.l-sidebar_article(href="#")
+//       img.l-sidebar_articleImage(src="http://placehold.it/30x30")
+//       .l-sidebar_articleLabel.c-label--news ニュース
+//       .l-sidebar_articleDate 2016年9月16日
+//       .l-sidebar_articleTitle 平成28年台風第10号による被害を受けられた皆様へ
+//       .l-sidebar_articleDescription 平成28年台風第10号による被害を受けられた皆様へ平成28年台風第10号による被害を受けられた皆様へ
+//     .l_sidebar_eventNewsIndexLinkArea
+//       a.l-sidebar_eventNewsIndexLink(href="#") > お知らせ一覧へ
+//   .l-sidebar_contributeArea
+//     .l-sidebar_sectionLabel CONTRIBUTE
+//     .l-sidebar_sectionDescription 株式会社chatboxは関西のコミュニティイベントを応援しています。
+//     a.l-sidebar_article(href="#")
+//        img.l-sidebar_articleImage(src="http://placehold.it/30x30")
+//
+// Styleguide 11.1.1
+
+.l-sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  &_sectionLabel {
+    text-align: center;
+    border-top: 1px solid $clr-darkGray;
+    border-bottom: 1px solid $clr-darkGray;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  &_sectionDescription {
+    padding-top: 1rem;
+    line-height: 1.2rem;
+    font-size: 0.8rem;
+  }
+  &_shareArea {
+    text-align: center;
+
+  }
+  &_shareTitle, &_twitter, &_facebook {
+    display: inline-block;
+    line-height: 3rem;
+    font-size: 0.8rem;
+  }
+  &_twitter, &_facebook {
+    padding-left: 1rem;
+    font-weight: bold;
+  }
+  &_twitterIcn, &_facebookIcn {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    //height: 3rem;
+    vertical-align: middle;
+  }
+  &_twitter {
+    color: $clr-twitter;
+    cursor: pointer;
+  }
+  &_twitterIcn {
+    padding-right: .5rem;
+    background:url("/assets/images/common/icn_twitter.png") no-repeat;
+  }
+  &_facebook {
+    color: $clr-facebook;
+    cursor: pointer;
+  }
+  &_facebookIcn {
+    background:url("/assets/images/common/icn_facebook.png") no-repeat;
+  }
+  &_article {
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  &_articleImage {
+    width: 100%;
+    height: 140px;
+  }
+  &_bannerImage {
+    width: 100%;
+    min-height: 140px;
+    border: 1px solid #ccc;
+    padding: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  &_articleLabel {
+    position: absolute;
+    top: 5px;
+    left: 0px;
+  }
+  &_articleDate {
+    padding-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+  &_articleTitle {
+    font-weight: bold;
+    padding-top: 0.5rem;
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+  }
+  &_articleDescription {
+    padding-top: 0.5rem;
+    line-height: 1.2rem;
+    font-size: 0.8rem;
+  }
+  &_eventNewsIndexLinkArea {
+    text-align: right;
+    padding-bottom: 40px;
+  }
+  &_eventNewsIndexLink {
+    color: $clr-main--font;
+    font-size: 0.8rem;
+  }
+  @include mediaSp{
+    display: none;
+  }
+}
+
+// サイドバー付き状態のコンテンツ領域
+//
+// Markup:
+//
+// Styleguide 11.1.2
+
+.l-sidebarContent{
+  padding-right: 280px;
+  @include mediaSp{
+    padding-right: 0px;
+  }
+
+}

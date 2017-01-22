@@ -1,0 +1,43 @@
+include ../mixins/_common.pug
+include ../mixins/_service.pug
+include ../mixins/_works.pug
+.service
+    +h1("サービス一覧", servicelist.hero.subtitle, servicelist.hero.label, servicelist.hero.brief)
+    +service({
+        name: "create",
+        title: "Web制作",
+        label: "create",
+        brief: "Web制作の技術は、日々日々大きく進歩し続けています。"+
+        "\n多様化するニーズや、複雑化するシステム構築の課題を、最新の制作技術でしっかりサポート。"+
+        "\nWeb制作に関するあらゆる相談に対応出来るよう、経験豊富なスタッフが親身に対応にあたります。",
+        items: [
+            {
+                "title": "Webページ制作",
+                "brief" : "コーポレートやキャンペーンなどWebサイト制作の多様なニーズに対し、デザインから制作・運用までのトータルサポートで親身に対応させていただきます。",
+                "link":{"to":"/service/design/"}
+            },
+            {
+                "title": "Webシステム開発",
+                "brief" : "複雑なWebシステム開発の課題もシンプルに整理し解決に導きます。改修や保守運用を見据えた柔軟な設計や、インフラ構築もおまかせ下さい。",
+                "link":{"to":"/service/system/"}
+            }
+        ]
+    })
+    +service({
+        name: "enhance",
+        title: "技術顧問",
+        label: "enhance",
+        brief: enhance.hero.brief,
+        items: enhance.hero.category
+    })
+    +service({
+        name: "grow",
+        title: "イベント",
+        label: "grow",
+        brief: grow.hero.brief,
+        items: grow.hero.category
+    })
+
+    //.service_works
+    //    include ../include/_works_map
+

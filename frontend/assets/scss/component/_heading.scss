@@ -1,0 +1,322 @@
+// 見出し
+//
+// Styleguide 2.0
+
+// 見出し
+//
+// width、paddingとかの調整が必要。
+//
+// Styleguide 2.1
+
+// h1
+//
+// 文章なし
+//
+// Markup:
+// include /frontend/assets/tmpl/mixins/_common.jade
+// +h1("タイトル","サブタイトル","TITLE")
+//
+// Styleguide 2.1.1
+
+.c-heading--h1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  &_title {
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 40px;
+    width: 19%;
+  }
+  &_subtitle {
+    display: inline-block;
+    width: 80%;
+    font-size: 1.1rem;
+    line-height: 38px;
+    border-bottom: 2px solid $clr-main--font;
+  }
+  &_titleEnglish {
+    color: $clr-lightGray;
+    text-transform: capitalize;
+  }
+  @include mediaSp{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    &_title {
+      font-size: 1.2rem;
+      width: 40%;
+    }
+    &_subtitle {
+      font-size: 1rem;
+      line-height: 30px;
+      span{
+        display: none;//一旦消す
+      }
+    }
+    &_subtitle {
+      width: 55%;
+    }
+
+  }
+}
+
+// h1（文章あり）
+//
+// 文章あり
+//
+// Markup:
+// include /frontend/assets/tmpl/mixins/_common.jade
+// +h1("タイトル","サブタイトル","TITLE","ここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入ります")
+//
+// Styleguide 2.1.2
+
+.c-heading--h1 {
+  &_description {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 2rem;
+    @include mediaSp {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    //width: 60%;
+  }
+}
+
+// h1（文章あり、画像あり）
+//
+// 文章あり、画像あり
+//
+// Markup:
+// include /frontend/assets/tmpl/mixins/_common.jade
+// +h1("タイトル","サブタイトル","TITLE","ここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入ります","http://placehold.it/800x200")
+//
+// Styleguide 2.1.3
+
+.c-heading--h1 {
+  &_image {
+    background-size: cover;
+    background-position-y: 50%;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 40px;
+    position: relative;
+    .cartain{
+      width: 100%;
+      height: 100%;
+      background-color: $clr-main--transrate;
+    }
+    img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+    @include mediaSp{
+      height: auto;
+      .cartain{
+        display: none;
+      }
+      img{
+        position: relative;
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+}
+
+// h2
+//
+//
+//
+// Markup:
+// include /frontend/assets/tmpl/mixins/_common.jade
+// +h2("タイトル","TITLE")
+//
+// Styleguide 2.1.4
+
+.c-heading--h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  &_title {
+    font-size: 1.4rem;
+    line-height: 3rem;
+    border-left: 6px solid $clr-main--font;
+    padding-left: 1rem;
+  }
+  &_titleEnglish {
+    color: $clr-lightGray;
+    text-transform: capitalize;
+    padding-left: 1.2rem;
+    //padding-top: 0.5rem;
+    margin-top: -5px;
+  }
+  @include mediaSp {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    &_title {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// h2（文章あり）
+//
+//
+//
+// include /frontend/assets/tmpl/mixins/_common.jade
+// +h2("タイトル","TITLE","ここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入ります")
+//
+// Styleguide 2.1.5
+
+.c-heading--h2 {
+  &_description {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 2rem;
+    @include mediaSp {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// h2（文章あり、画像あり）
+//
+//
+//
+// include /frontend/assets/tmpl/mixins/_common.jade
+// +h2("タイトル","TITLE","ここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入りますここに文章が入ります","http://placehold.it/800x400")
+//
+// Styleguide 2.1.6
+
+.c-heading--h2 {
+  &_image {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+// h3
+//
+//
+//
+// Markup:
+// <div class="c-heading--h3">
+//    <h3 class="c-heading--h3_title">実績</h3>
+//    <div class="c-heading--h3_border"></div>
+// </div>
+//
+// Styleguide 2.1.7
+
+.c-heading--h3 {
+  text-align: center;
+  &_title {
+    font-size: 1.4rem;
+  }
+  &_border {
+    display: inline-block;
+    width: 2.5rem;
+    border-bottom: 4px solid $clr-main--font;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  @include mediaSp {
+    &_title {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// h4
+//
+//
+//
+// Markup:
+// <div class="c-heading--h4">
+//    <h4 class="c-heading--h4_title">技術顧問</h4>
+//    <div class="c-heading--h4_border"></div>
+// </div>
+//
+// Styleguide 2.1.8
+
+.c-heading--h4 {
+  text-align: center;
+  &_title {
+    font-size: 1.2rem;
+  }
+  &_border {
+    display: inline-block;
+    width: 2.5rem;
+    border-bottom: 2px solid $clr-main--font;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  @include mediaSp {
+    &_title {
+      font-size: 1rem;
+    }
+  }
+}
+
+// トップページ専用 h2
+//
+//
+//
+// Markup:
+// <div class="c-heading--top-h2">
+//    <h2 class="c-heading--top-h2_title">広報</h2>
+//    <div class="c-heading--top-h2_border"></div>
+//    <p class="c-heading--top-h2_titleEnglish">EVENT & NEWS</p>
+// </div>
+//
+// Styleguide 2.1.9
+
+.c-heading--top-h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  &_title {
+    font-size: 1.4rem;
+  }
+  &_border {
+    display: inline-block;
+    width: 2.5rem;
+    border-bottom: 4px solid $clr-main--font;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  &_titleEnglish {
+    color: $clr-lightGray;
+    text-transform: capitalize;
+  }
+  @include mediaSp {
+    margin-bottom: 20px;
+    &_title {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// トップページ専用 h2（文章あり）
+//
+//
+//
+// Markup:
+// .c-heading--top-h2
+//    h2.c-heading--top-h2_title 広報
+//    .c-heading--top-h2_border
+//    p.c-heading--top-h2_titleEnglish EVENT & NEWS
+//    p.c-heading--top-h2_description ろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむ
+//
+// Styleguide 2.1.10
+
+.c-heading--top-h2 {
+  &_description {
+    margin-top: 40px;
+    line-height: 2rem;
+    @include mediaSp {
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+// サービス一覧ページ
+//
+// Styleguide 22.0
+
+// サービス一覧ページ
+//
+//
+//
+// Styleguide 22.1
+
+// サービス
+//
+// Markup:
+// include /frontend/assets/tmpl/mixins/_service
+// -
+//   var serviceItem = {
+//     title: "サービス",
+//     label: "SERVICE",
+//     name: "create",
+//     brief: "サブタイトルが入ります",
+//     items: [
+//       {title: "サービス名",brief:"説明が入ります。説明が入ります。説明が入ります。説明が入ります。"},
+//       {title: "サービス名",brief:"説明が入ります。説明が入ります。説明が入ります。説明が入ります。"}
+//     ]}
+//   var detail = "詳細を見る"
+// +service(serviceItem,detail)
+//
+// Styleguide 22.1.1
+
+.p-serviceCategoryArea {
+  &_title {
+    margin-bottom: 20px;
+  }
+  &_examples {
+    //background-image: url("/assets/images/service/create_bg.jpg");
+    background-size: cover;
+    background-position-y: 50%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+}
+

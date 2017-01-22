@@ -1,0 +1,30 @@
+infos:
+  event:
+#    - date: 2016/12/17
+#      tag: event
+#      brief: 画像編集講座「Photoshopを用いた画像加工」を開催します。
+#      image: /assets/images/dummy/event_sumb.jpg
+    - date: 2016/11/11
+      tag: event
+      brief: Web制作講座「LaravelによるDBアプリケーションの組み方[全4回]」を開催しました。
+      href: "https://leccafe.connpass.com/event/43219/"
+      image: /assets/images/dummy/event_sumb.jpg
+    - date: 2016/11/09
+      tag: event
+      brief: Web制作講座 「Vue.js 2.0によるSPA開発[全3回]」を開催しました。
+      href: "https://leccafe.connpass.com/event/43668/"
+      image: /assets/images/dummy/event_sumb.jpg
+    - date: 2016/10/02
+      tag: news
+      brief: 10月02日で chatbox は 3年目を迎えます。
+      image: /assets/images/dummy/event_sumb.jpg
+  contribute:
+    - image: /assets/images/sidebar/phpcon2016.png
+      href: http://conference.kphpug.jp/2016/
+    - image: /assets/images/sidebar/lol.png
+      href: http://kosenconf.me/
+    - image: /assets/images/sidebar/gfo2016.png
+      href: http://kfug.jp/gfo2016/
+    - image: /assets/images/sidebar/laravelosaka.jpg
+      href: http://php-jp.github.io/laravel-osaka-2016/
+

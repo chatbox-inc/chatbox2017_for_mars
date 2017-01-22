@@ -1,0 +1,46 @@
+include ../mixins/_common.pug
+include ../mixins/_top.pug
+.top
+    h1.top_hero
+        span 株式会社 chatboxはWebのこれからを語り合う会社です。
+        .p-top_catch
+    .top_eventNews
+        .p-topNewsArea
+            +top-h2("お知らせ", "event & news")
+            ul.p-topNewsList
+                each info in infos.event
+                    a(href=info.href,target="_blank")
+                        li.p-topNewsList_item
+                            p.p-topNewsList_date=info.date
+                            if info.tag == "event"
+                                .p-topNewsList_label.c-label--event イベント
+                            else if info.tag == "news"
+                                .p-topNewsList_label.c-label--news ニュース
+                            else
+                                .p-topNewsList_label.c-label--news その他
+                            p.p-topNewsList_description=info.brief
+            // TODO CEATE LIST PAGE
+            //a.p-topNewsArea_button.c-button--borderRed(href="#") お知らせ一覧を見る
+
+    .top_service
+        include ../include/_service_map.pug
+    //.top_works
+    //    include ./include/_works_map
+    .top_member
+        .p-topMembersArea
+            +top-h2("chatboxの働き方", "member",
+            "chatboxはWeb制作を中心に、技術顧問等の制作指導やイベント運営スクール等を行う会社です。" +
+            "\n日々変化するWeb制作の関連技術に関心をもつ、子供のようなワクワク感を忘れないメンバーが揃っています。"
+            )
+            a.p-topMemberArea_button.c-button(href="/member/") メンバーの紹介を見る
+
+    .top_about
+        .p-topAboutArea
+            +top-h2("会社概要", "about",
+            "chatbox は 2016年 10月をもって 3年目を迎えることとなりました。" +
+            "\n日々変化する情報技術の中でも変わらない「人と人とのコミュニケーション」を大切に。"+
+            "\n今後もWeb制作を始め、技術顧問やイベント活動等を通じて、Webの技術をたくさんの現場に届ける活動を進めていきます。" +
+            "\n「作る」だけでなく、「伝え合う」事に取り組みたい。" +
+            "\n株式会社chatboxはWebの「 これから」を語り合う会社です。")
+            a.p-topAboutArea_button.c-button(href="/about/") 会社概要を見る
+

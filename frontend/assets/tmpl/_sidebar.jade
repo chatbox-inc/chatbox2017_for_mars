@@ -1,0 +1,37 @@
+.l-sidebar
+    .l-sidebar_shareArea
+        p.l-sidebar_shareTitle SHARE
+        a.l-sidebar_twitter.btn-twitter
+            .l-sidebar_twitterIcn
+            |twitter
+        a.l-sidebar_facebook.btn-facebook
+            .l-sidebar_facebookIcn
+            |facebook
+    .l-sidebar_eventNewsArea
+        .l-sidebar_sectionLabel EVENT & NEWS
+        each info in infos.event
+            a.l-sidebar_article(href=info.href,target="_blank")
+                //img.l-sidebar_articleImage(src=info.image,alt=info.brief)
+                //if info.tag == "event"
+                //    .l-sidebar_articleLabel.c-label--event イベント
+                //else
+                //    .l-sidebar_articleLabel.c-label--news ニュース
+                .l-sidebar_articleDate=info.date
+                .l-sidebar_articleTitle=info.brief
+                // 不要？
+                //.l-sidebar_articleDescription=info.brief
+
+        //.l-sidebar_eventNewsIndexLinkArea
+        //    a.l-sidebar_eventNewsIndexLink(href="#") > お知らせ一覧へ
+
+    .l-sidebar_contributeArea
+        .l-sidebar_sectionLabel CONTRIBUTE
+        .l-sidebar_sectionDescription 株式会社chatboxは関西のコミュニティイベントを応援しています。
+        each info in infos.contribute
+            a.l-sidebar_article(href=info.href,target="_blank")
+                img.l-sidebar_bannerImage(src=info.image,alt="株式会社chatboxは関西のコミュニティイベントを応援しています。")
+    br
+    br
+    br
+    br
+

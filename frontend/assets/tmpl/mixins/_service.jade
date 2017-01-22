@@ -1,0 +1,16 @@
+mixin service(service)
+    .service_create(id="sec_#{service.name}")
+        .p-serviceCategoryArea
+            .p-serviceCategoryArea_title.c-heading--h2
+                h2.c-heading--h2_title=service.title
+                p.c-heading--h2_titleEnglish=service.label
+                P.c-heading--h2_description !{service.brief.trim().replace(/\n/g, '<br/>')}
+            .p-serviceCategoryArea_examples(style="background-image:url('/assets/images/service/#{service.name}_bg.jpg')")
+                .l-category
+                    each item in service.items
+                        .l-category_item
+                            .c-heading--h4
+                                h4.c-heading--h4_title=item.title
+                                .c-heading--h4_border
+                            .l-category_itemDescription !{item.brief.trim().replace(/\n/g, '<br/>')}
+                            a.l-category_itemButton.c-button--borderRed--variable(href=item.link.to) 詳細を見る

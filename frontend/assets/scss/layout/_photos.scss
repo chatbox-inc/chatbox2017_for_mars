@@ -1,0 +1,22 @@
+.l-photos{
+  display: flex;
+  width: 100%;
+  &_item {
+    flex:1;
+    img{
+      width: 100%;
+      display: block;
+      //height: 100%;
+    }
+  }
+  @include mediaSp{
+    flex-wrap: wrap;
+    &_item {
+      flex: inherit;
+      width: 50%;
+    }
+
+  }
+
+
+}

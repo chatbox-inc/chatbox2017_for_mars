@@ -1,0 +1,97 @@
+design:
+  hero:
+    bg: /assets/images/service/design/top_bg.jpg
+    title: "デザイン"
+    subtitle: "Webページ制作や、印刷物のデザイン制作"
+    label: "design"
+    brief: |
+      情報を伝えるだけでなく、心を揺さぶるWebを作りたい。
+      インターネットがごく身近で当たり前となったイマだからこそ、考えたいWebの姿があります。
+      ユーザの心をくすぐるWebサイトのデザイン・仕掛けを、お客様とともにじっくりに考えていきます。
+      テンプレートや既存のサイトを真似て作る ありもののWebだけではなく、ここにしかないWebを作りたい。
+      chatboxの目指すWeb制作は、Webの向こうに新しい感動を届ける、ワクワクするWeb作りです。
+    category:
+      -
+        title: Webページ制作
+        brief: 会社案内やキャンペーンサイト、LPなど高品質なWebをお届けします。
+        link:
+          to: "/service/design/#webpage"
+          label: 詳細を見る
+      -
+        title: 印刷物制作
+        brief: 名刺やリーフレットなど、Webと連動した印刷物デザインの制作もおまかせください。
+        link:
+          to: "/service/design/#print"
+          label: 詳細を見る
+  webpage:
+    bg: /assets/images/service/design/design_webDesign_bg.png
+    title: Webページ制作
+    label: Web Design
+    brief: |
+      Webを利用した効果的な訴求には、様々な技術・サービスの利用やサイト構築上のノウハウが欠かせません。
+      Webをメインに制作を行うchatboxだからこそ、効果的なWebページのデザイン提案に自信があります。
+    tasks:
+      - デザインからコーディング、運用など一貫して制作を依頼したい。
+      - レスポンシブやアニメーションなど、高品質なWeb技術を用いた制作を依頼したい。
+    model:
+      - title: "コーポレートサイト"
+        image: /assets/images/service/design/webDesign_modelCase01.png
+      - title: "Webキャンペーン"
+        image: /assets/images/service/design/webDesign_modelCase02.png
+      - title: "CMS構築"
+        image: /assets/images/service/design/webDesign_modelCase03.png
+    point:
+      label: "chatbox Webページ制作の強み"
+      items:
+        - "デザイン・提案・コーディングまで一貫した社内での制作体制"
+        - "最新の製作技術を武器に、丁寧な制作提案を低コストで実現"
+        - "システム開発や印刷物デザインにも応用可能な対応力"
+    works:
+      - title: "イベントサイト制作"
+        brief: "イベントサイトとして、順次更新対応可能な柔軟なWebサイトデザインに対応しております。"
+        image: "/assets/images/service/design/webDesign_Works01.jpg"
+      - title: "CMS構築"
+        brief: "Wordpressを始めとする各種CMS構築で、お客様で修正可能なWebサイト運用が可能です。"
+        image: "/assets/images/service/design/webDesign_Works02.jpg"
+      - title: "アプリケーションデザイン"
+        brief: "Webだけでなく、スマホアプリ等のデザイン・UI設計も承っております。"
+        image: "/assets/images/service/design/webDesign_Works03.jpg"
+  print:
+    bg: /assets/images/service/design/design_DTP_bg.png
+    title: 印刷物制作
+    label: Publishing
+    brief: |
+      マーケティングやキャンペーンに関する活動は、Webサイトを制作して終わり、というわけには行きません。
+      販促・広報活動で必要となる、リーフレット等の印刷物制作も、chatboxならWeb制作と合わせて対応させていただきます。
+      Webサイトと印刷物で一貫したデザインイメージを維持しつつ、Web、紙それぞれに最適な訴求の方法をご提案させていただきます。
+    tasks:
+      - 印刷物からサイト制作まで一貫して制作を依頼したい。
+      - Webを通じた効果的なキャンペーン展開を提案してもらいたい。
+      - 写真素材やイラスト制作など広報・販促で利用する画像素材が不足している。
+    model:
+      - title: "リーフレット"
+        image: /assets/images/service/design/DTP_modelCase01.png
+      - title: "名刺・カード"
+        image: /assets/images/service/design/DTP_modelCase02.png
+      - title: "画像処理・イラスト"
+        image: /assets/images/service/design/DTP_modelCase03.png
+    point:
+      label: "chatbox 印刷物制作の強み"
+      items:
+        - "Webサイトと印刷物で連携したキャンペーン展開が可能"
+        - "ソーシャルやQRコードを活用したキャンペーン提案もおまかせ下さい"
+        - "社内のイラストレータが、画像加工・イラスト制作まで丁寧に行います"
+    works:
+      - title: "名刺制作"
+        brief: "クラウドワークスのコンペ作品で、名刺制作の作成を行っております。"
+        image: "/assets/images/service/design/DTP_Works01.jpg"
+      - title: "イラスト作成・画像加工"
+        brief: "Photoshop を利用した素材加工や、イラスト制作も承っております。"
+        image: "/assets/images/service/design/DTP_Works02.jpg"
+      - title: "チラシ制作"
+        brief: "イベントサイト制作と合わせて、イベントパンフレットの作成を行っています。"
+        image: "/assets/images/service/design/DTP_Works03.jpg"
+
+
+
+

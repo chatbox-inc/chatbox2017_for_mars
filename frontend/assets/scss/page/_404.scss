@@ -1,0 +1,23 @@
+// 404ページ
+.notfound404 {
+  margin: 5rem 0 9rem;
+  width:100%;
+  text-align: center;
+  .title {
+    display: inline-block;
+    margin: 2rem 0;
+    font-size: 5rem;
+    letter-spacing: 10px;
+    color: $clr-extraLightGray;
+  }
+  .read {
+    margin: 1rem 0;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+  }
+  .description {
+    display: block;
+    margin-bottom: 4rem;
+    color: $clr-darkGray;
+  }
+}

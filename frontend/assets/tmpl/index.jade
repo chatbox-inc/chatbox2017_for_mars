@@ -1,0 +1,9 @@
+extends _layout.jade
+
+block ogp
+    include ./mixins/_ogp.jade
+    +ogp("株式会社 chatboxはWebのこれからを語り合う会社です。",
+    "株式会社chatboxは大阪堺筋本町の小さなWeb制作会社です。"+
+    "Web制作や技術顧問、イベント運営など、最新のWeb製作技術を活かした様々な活動を行っています。",
+    null,
+    [])

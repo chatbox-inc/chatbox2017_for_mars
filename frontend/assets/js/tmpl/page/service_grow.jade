@@ -1,0 +1,42 @@
+extends ../../_layout
+
+block ogp
+    include ../../mixins/_ogp
+    +ogp("イベント・セミナー",
+    "高品質なWebの制作には日々進歩するWeb界隈のIT技術をフォローすることが欠かせません。" +
+    "chatbox はIT系コミュニティイベントの運営・支援を通じて、関西のIT系コミュニティ活動を応援しています。",
+    null,
+    ["イベント", "イベント運営", "セミナー", "IT", "コミュニティ", "スクール"])
+block content
+    include ../../mixins/_common
+    include ../../mixins/_works
+    include ../../mixins/_service_detail
+    div.l-sidebarContainer
+        div.l-sidebarContent
+            .p-serviceDetailHero(style="background-image:url('#{grow.hero.bg}')")
+                +h1(grow.hero.title,grow.hero.subtitle,grow.hero.label,grow.hero.brief)
+                .p-serviceDetailHero_category
+                    +categoryBox(grow.hero.category)
+
+            #sec_event.p-serviceDetailArea(style="background-image:url('#{grow.event.bg}')")
+                +h2(grow.event.title,grow.event.label,grow.event.brief)
+                +list(grow.event.tasks,"このようなことでお困りの場合はご相談下さい")
+                //+modelCase(grow.event.model)
+                +solution(grow.event.point.label,grow.event.point.items)
+                //.p-systemWorks
+                //    +h3("実績")
+                //    +works()
+                //    div.p-systemWorks_button: +btn-default("実績をさらに見る","/works/")
+            #sec_school.p-serviceDetailArea(style="background-image:url('#{grow.school.bg}')")
+                +h2(grow.school.title,grow.school.label,grow.school.brief)
+                //+list(grow.school.tasks,"このようなことでお困りの場合はご相談下さい")
+                //+modelCase(grow.school.model)
+                //+solution(grow.school.point.label,grow.school.point.items)
+                //.p-systemWorks
+                //    +h3("実績")
+                //    +works()
+                //    div.p-systemWorks_button: +btn-default("実績をさらに見る","/works/")
+            include ../../include/_service_map
+            br
+            br
+        include ../../_sidebar

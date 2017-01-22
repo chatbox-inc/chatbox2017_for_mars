@@ -1,0 +1,109 @@
+.p-profile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  &_imageArea {
+    width: 300px;
+    @include mediaSp{
+      width: 100%;
+    }
+  }
+  &_imagePhoto {
+    margin: 20px auto;
+    width: 250px;
+    height: 250px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 50%;
+  }
+  &_infoArea {
+    width: 30%;
+    vertical-align: middle;
+    text-align: center;
+    h4{
+      font-size: 1.8rem;
+      font-weight: normal;
+      @include mediaSp {
+        font-size: 1.5rem;
+      }
+    }
+    @include mediaSp{
+      width: 100%;
+    }
+  }
+  &_infoSnsArea {
+  }
+  &_infoSns {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: .5rem;
+    margin-top: 2rem;
+    width:2rem;
+    height:2rem;
+    background-color: $clr-main--font;
+    color: white;
+    line-height:2rem;
+    text-align: center;
+    border-radius: 50%;
+  }
+  &_description {
+    width: 100%;
+    padding-top: 1.5rem;
+    line-height: 1.8rem;
+  }
+}
+
+.p-companyHistory {
+  //border-collapse:separate;
+  //border-spacing: 0px .5rem;
+  line-height: 1.1rem;
+  &_row{
+    display: flex;
+    justify-content: space-between;
+    padding:.5rem 0;
+    flex-wrap: nowrap;
+    border-bottom: $clr-lightGray 1px solid;
+  }
+  &_when {
+    font-size: 1rem;
+    min-width: 5rem;
+  }
+  &_what {
+    width: 100%;
+    margin: .2em 0;
+  }
+  &_link {
+    font-size: 1rem;
+    min-width: 4rem;
+    text-align: right;
+  }
+  @include mediaSp(){
+    &_row{
+      flex-wrap: wrap;
+    }
+    &_when{
+      width: 100%;
+    }
+    &_what{
+      width: 100%;
+    }
+    &_link{
+      width: 100%;
+    }
+    &_link {
+      font-size: 1rem;
+      min-width: 3rem;
+    }
+
+  }
+}
+
+.p-memberPageProfileArea {
+  // あんまり必要ないかも
+}
+
+.p-memberPageHistoryArea {
+  margin-bottom: 40px;
+}

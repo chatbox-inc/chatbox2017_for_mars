@@ -1,0 +1,395 @@
+// トップページ
+//
+// Styleguide 20.0
+
+// トップページ
+//
+// Styleguide 20.1
+
+// ヒーロー
+//
+// 最初に使うラベル部分。水平線はhrじゃないほうがよさげ。
+//
+// Markup:
+// img.p_heroImageArea(src="http://placehold.it/20x20")
+//
+// Styleguide 20.1.1
+
+.top_hero {
+  width: 100%;
+  height: 400px;
+  background:url("/assets/images/top/hero.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  span{
+    display: none;
+  }
+  @media screen and (min-width: 0px) and (max-width: 500px) {
+    height:500px;
+    background:url("/assets/images/top/sp_hero.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .p-top_catch {
+    display: inline-block;
+    margin: auto;
+    width: 25%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: url("/assets/images/top/catch.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+    @media screen and (min-width: 0px) and (max-width: 550px) {
+      width:50%;
+      height: 50%;
+    }
+
+  }
+}
+
+// ニュース・ イベントリスト
+//
+// ニュースとイベントの一覧
+//
+// Markup:
+// ul.p-topNewsList
+//   li.p-topNewsList_item
+//     p.p-topNewsList_date 2016年10月13日
+//     .p-topNewsList_label.c-label--news ニュース
+//     p.p-topNewsList_description 社内研修のため、2016年10月13日は臨時休業させていただきます
+//   li.p-topNewsList_item
+//     p.p-topNewsList_date 2016年10月13日
+//     .p-topNewsList_label.c-label--event イベント
+//     p.p-topNewsList_description 社内研修のため、2016年10月13日は臨時休業させていただきます
+//   li.p-topNewsList_item
+//     p.p-topNewsList_date 2016年10月13日
+//     .p-topNewsList_label.c-label--news ニュース
+//     p.p-topNewsList_description 社内研修のため、2016年10月13日は臨時休業させていただきます
+//   li.p-topNewsList_item
+//     p.p-topNewsList_date 2016年10月13日
+//     .p-topNewsList_label.c-label--event イベント
+//     p.p-topNewsList_description 社内研修のため、2016年10月13日は臨時休業させていただきます
+//
+// Styleguide 20.1.2
+
+.p-topNewsList {
+  margin-bottom: 40px;
+  &_item {
+    padding: 1rem 0;
+    line-height: 1.8;
+    text-align: left;
+    &:nth-child(even){
+      background-color: $clr-extraLightGray2;
+    }
+  }
+  &_date, &_label, &_description {
+    display: inline-block;
+    margin-left: 1rem;
+  }
+  &_description {
+    padding: .5em 0;
+  }
+}
+
+// ニュース・イベントエリア
+//
+// トップページのニュース・イベントエリア
+//
+// Markup:
+// .p-topNewsArea
+//   .c-heading--top-h2
+//     h2.c-heading--top-h2_title お知らせ
+//     .c-heading--top-h2_border
+//     p.c-heading--top-h2_titleEnglish EVENT & NEWS
+//   ul.p-topNewsList
+//     li.p-topNewsList_item
+//       p.p-topNewsList_date 2016年10月13日
+//       .p-topNewsList_label.c-label--news ニュース
+//       p.p-topNewsList_description 社内研修のため、2016年10月13日は臨時休業させていただきます
+//     li.p-topNewsList_item
+//       p.p-topNewsList_date 2016年10月13日
+//       .p-topNewsList_label.c-label--event イベント
+//       p.p-topNewsList_description 社内研修のため、2016年10月13日は臨時休業させていただきます
+//     li.p-topNewsList_item
+//       p.p-topNewsList_date 2016年10月13日
+//       .p-topNewsList_label.c-label--news ニュース
+//       p.p-topNewsList_description 社内研修のため、2016年10月13日は臨時休業させていただきます
+//     li.p-topNewsList_item
+//       p.p-topNewsList_date 2016年10月13日
+//       .p-topNewsList_label.c-label--event イベント
+//       p.p-topNewsList_description 社内研修のため、2016年10月13日は臨時休業させていただきます
+//
+// Styleguide 20.1.3
+
+.p-topNewsArea {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  &_button {
+    margin-top: 40px;
+  }
+}
+
+// サービス一覧
+//
+// サービス一覧
+//
+// Markup:
+// .p-topService
+//   .p-topService_element
+//     img.p-topService_elementImage(src="http://placehold.it/20x20")
+//     .p-topService_elementTitle.c-heading--h4
+//       h4.c-heading--h4_title Web制作
+//       .c-heading--h4_border
+//     p.p-topService_elementDescription 代表取締役代表取締役代表取締役代表取締役代表取締役代表取締役代表取締役
+//     .p-topService_elementList.c-list
+//       ul.c-list_area
+//         li.c-list_item Webサイト制作
+//         li.c-list_item Webシステム開発
+//     a.c-button--borderRed(href="#") 詳細をみる
+// .p-topService
+//   .p-topService_element
+//     img.p-topService_elementImage(src="http://placehold.it/20x20")
+//     .p-topService_elementTitle.c-heading--h4
+//       h4.c-heading--h4_title Web制作
+//       .c-heading--h4_border
+//     p.p-topService_elementDescription 代表取締役代表取締役代表取締役代表取締役代表取締役代表取締役代表取締役
+//     .p-topService_elementList.c-list
+//       ul.c-list_area
+//         li.c-list_item Webサイト制作
+//         li.c-list_item Webシステム開発
+//     a.c-button--borderRed(href="#") 詳細をみる
+// .p-topService
+//   .p-topService_element
+//     img.p-topService_elementImage(src="http://placehold.it/20x20")
+//     .p-topService_elementTitle.c-heading--h4
+//       h4.c-heading--h4_title Web制作
+//       .c-heading--h4_border
+//     p.p-topService_elementDescription 代表取締役代表取締役代表取締役代表取締役代表取締役代表取締役代表取締役
+//     .p-topService_elementList.c-list
+//       ul.c-list_area
+//         li.c-list_item Webサイト制作
+//         li.c-list_item Webシステム開発
+//     a.c-button--borderRed(href="#") 詳細をみる
+//
+// Styleguide 20.1.4
+
+.p-topService {
+  display: flex;
+  @include mediaSp{
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  &_element {
+    background-color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  &_elementCreate {
+    @include mediaSp {
+      @include p-topService_spElement("/assets/images/top/sp_create_bg.jpg");
+    }
+  }
+  &_elementEnhance {
+    @include mediaSp {
+      @include p-topService_spElement("/assets/images/top/sp_enhance_bg.jpg");
+    }
+  }
+  &_elementGrow {
+    @include mediaSp {
+      @include p-topService_spElement("/assets/images/top/sp_grow_bg.jpg");
+    }
+  }
+  .p-topService_element_wrap {
+    display: none;
+    @include mediaSp{
+      display: block;
+      padding: 3em;
+      background: rgba(255,255,255,.8);
+    }
+  }
+  &_elementContainer{
+    display: block;
+    margin: auto;
+    padding: 20px 0;
+    background: rgba(255,255,255,.9);
+  }
+  &_elementImage {
+    @include circle_container(150px);
+    @include mediaSp{
+      display: none;
+    }
+  }
+  &_elementTitle {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  &_elementList,
+  &_elementDescription {
+    font-size: .8rem;
+    padding: 0 2em;
+  }
+  &_elementDescription {
+    text-align: left;
+    line-height: 1.5rem;
+  }
+  &_elementList {
+    text-align: left;
+    width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// サービス一覧エリア
+//
+// サービス一覧
+//
+// Markup:
+// .p-topServiceArea
+//   .c-heading--top-h2
+//     h2.c-heading--top-h2_title サービスについて
+//     .c-heading--top-h2_border
+//     p.c-heading--top-h2_titleEnglish SERVICE
+//   .p-topService
+//     .p-topService_element
+//       img.p-topService_elementImage(src="http://placehold.it/20x20")
+//       .p-topService_elementTitle.c-heading--h4
+//         h4.c-heading--h4_title Web制作
+//         .c-heading--h4_border
+//       p.p-topService_elementDescription 代表取締役代表取締役代表取締役代表取締役代表取締役代表取締役代表取締役
+//       .p-topService_elementList.c-list
+//         ul.c-list_area
+//           li.c-list_item Webサイト制作
+//           li.c-list_item Webシステム開発
+//       a.c-button--borderRed(href="#") 詳細をみる
+//     .p-topService_element
+//       img.p-topService_elementImage(src="http://placehold.it/20x20")
+//       .p-topService_elementTitle.c-heading--h4
+//         h4.c-heading--h4_title Web制作
+//         .c-heading--h4_border
+//       p.p-topService_elementDescription 代表取締役代表取締役代表取締役代表取締役代表取締役代表取締役代表取締役
+//       .p-topService_elementList.c-list
+//         ul.c-list_area
+//           li.c-list_item Webサイト制作
+//           li.c-list_item Webシステム開発
+//       a.c-button--borderRed(href="#") 詳細をみる
+//     .p-topService_element
+//       img.p-topService_elementImage(src="http://placehold.it/20x20")
+//       .p-topService_elementTitle.c-heading--h4
+//         h4.c-heading--h4_title Web制作
+//         .c-heading--h4_border
+//       p.p-topService_elementDescription 代表取締役代表取締役代表取締役代表取締役代表取締役代表取締役代表取締役
+//       .p-topService_elementList.c-list
+//         ul.c-list_area
+//           li.c-list_item Webサイト制作
+//           li.c-list_item Webシステム開発
+//       a.c-button--borderRed(href="#") 詳細をみる
+//
+// Styleguide 20.1.5
+
+.p-topServiceArea {
+  text-align: center;
+  //margin: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $clr-extraLightGray2;
+  &_button {
+    margin-top: 40px;
+  }
+}
+
+// サービス一覧エリア
+//
+// 実績紹介エリア
+//
+// Markup:
+// .p-topWorksArea
+//   .c-heading--top-h2
+//     h2.c-heading--top-h2_title 実績紹介
+//     .c-heading--top-h2_border
+//     p.c-heading--top-h2_titleEnglish WORKS
+//   .l-works
+//     .l-works_examples
+//       .l-works_example
+//         img.l-works_exampleImage(src="http://placehold.it/20x20")
+//         .l-works_exampleTitle 勤怠管理システムの作成
+//         .l-works_exampleBorder
+//         .l-works_exampleDescription あなたは将来いやしくもある融通順というもののためを来るたで
+//       .l-works_example
+//         img.l-works_exampleImage(src="http://placehold.it/20x20")
+//         .l-works_exampleTitle 勤怠管理システムの作成
+//         .l-works_exampleBorder
+//         .l-works_exampleDescription あなたは将来いやしくもある融通順というもののためを来るたで
+//       .l-works_example
+//         img.l-works_exampleImage(src="http://placehold.it/20x20")
+//         .l-works_exampleTitle 勤怠管理システムの作成
+//         .l-works_exampleBorder
+//         .l-works_exampleDescription あなたは将来いやしくもある融通順というもののためを来るたで
+//   a.p-topWorksArea_button.c-button(href="#") 実績一覧を見る
+//
+// Styleguide 20.1.6
+
+.p-topWorksArea {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  &_button {
+    margin-top: 40px;
+  }
+}
+
+// chatboxで働くメンバーエリア
+//
+//
+//
+// Markup:
+// .p-topMembersArea
+//   .c-heading--top-h2
+//     h2.c-heading--top-h2_title chatboxで働くメンバー
+//     .c-heading--top-h2_border
+//     p.c-heading--top-h2_titleEnglish MEMBER
+//     p.c-heading--top-h2_description ろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむ
+//   a.p-topMemberArea_button.c-button(href="#") メンバーの紹介を見る
+//
+// Styleguide 20.1.7
+
+.p-topMembersArea {
+  text-align: center;
+  padding: 40px 20px;
+  &_button {
+    margin-top: 40px;
+  }
+  background-image: url("/assets/images/top/member_bg.jpg");
+  background-size: cover ;
+}
+
+// 会社概要エリア
+//
+//
+//
+// Markup:
+// .p-topAboutArea
+//   .c-heading--top-h2
+//     h2.c-heading--top-h2_title 会社概要
+//     .c-heading--top-h2_border
+//     p.c-heading--top-h2_titleEnglish ABOUT
+//     p.c-heading--top-h2_description ろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれ
+//   a.p-topAboutArea_button.c-button(href="#") 会社概要を見る
+//
+// Styleguide 20.1.8
+
+.p-topAboutArea {
+  text-align: center;
+  padding: 40px 20px;
+}
+

@@ -1,0 +1,15 @@
+export default [
+    { path: '/',                     component: require("./page/Top.vue") },
+    { path: '/about',                component: require("./page/About.vue") },
+    { path: '/contact',              component: require("./page/Contact.vue") },
+    { path: '/member',               component: require("./page/Members.vue") },
+    { path: '/member/mikakane',      component: require("./page/Member.vue") },
+    { path: '/member/yasui',         component: require("./page/Member.vue") },
+    { path: '/member/shono',         component: require("./page/Member.vue") },
+    { path: '/service',              component: require("./page/Service.vue") },
+    { path: '/service/design',       component: require("./page/ServiceDesign.vue") },
+    { path: '/service/enhance',      component: require("./page/ServiceEdu.vue") },
+    { path: '/service/grow',         component: require("./page/ServiceGrow.vue") },
+    { path: '/service/system',       component: require("./page/ServiceSystem.vue") },
+    { path: '*',                     component: require("./page/404.vue") },
+]

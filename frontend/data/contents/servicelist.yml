@@ -1,0 +1,66 @@
+servicelist:
+  hero:
+    title: サービス一覧
+    label: service
+    subtitle: chatboxにできること
+    brief: |
+      進歩する情報技術の中でも、人と人とのコミュニケーションは変わりません。
+      Webにまつわる日頃の悩みや疑問、「Web制作」にまつわる思いに真摯に対応します。
+
+      最新のWeb制作技術を用いた効率的で柔軟な「Web制作」事業を中心に、
+      技術顧問やイベント・セミナー活動など、chatboxは「伝える」を軸にした活動を行っております。
+
+      「作る」だけでなく、「伝え合う」事に取り組みたい。株式会社chatbxはWebの「これから」を語り合う会社です。
+
+  create:
+    name: create
+    title: CREATE
+    label: web design & system
+    brief: |
+      株式会社chatboxは大阪本町の小さなWeb制作会社です。
+      デザイナやエンジニアを含む少数のチームで、Web制作におけるデザイン、開発、運用、ディレクションなどを社内で行っております。
+      Webページの制作から大規模なシステムの構築案件まで。
+      制作の様々なニーズに柔軟に対応出来る高い技術力と経験で、お客様に満足いただけるWeb制作を提供し続けています。
+    items:
+      - title: Webページ制作
+        href: /service/design/
+        brief: |
+          WEB デザインや WEB システム制作など、B2C や B2B を問わず幅広い領域で、高品質なWEB制作業務を提供し続けています。
+      - title: Webシステム開発
+        href: /service/system/
+        brief: |
+          WEB デザインや WEB システム制作など、B2C や B2B を問わず幅広い領域で、高品質なWEB制作業務を提供し続けています。
+  enhance:
+    name: enhance
+    title: ENHANCE
+    label: make it better
+    brief: |
+      変化の激しいWeb制作の現場で、社内技術力の維持・向上を継続的に続けていくことは大きな苦労を伴います。
+      クライアントからの多様なニーズに対応するためには、設計・開発・デザイン・運用など多岐に渡る専門知識が必要不可欠となってきます。
+      chatboxの技術顧問サービスでは、技術力豊富なスタッフがお客様の開発現場に直接訪問し、日々の技術的な悩みや開発現場の問題を一つ一つ解決にあたります。
+    items:
+      - title: 技術顧問
+        href: /service/enhance/
+        brief: |
+          頼れる現場のアドバイザーとして、高い技術力で日々の制作現場の悩み・疑問に対応し、円滑な制作体制をサポートします。
+      - title: 社員研修
+        href: /service/enhance/#seminor
+        brief: |
+          制作現場の継続的な技術力向上に。Gitやトレンドのフレームワークなど、現場でイマ使える技術の習得・運用をサポートします。
+  grow:
+    name: grow
+    title: GROW
+    label: learn
+    brief: |
+      日々変化する情報技術をより多くの現場に伝えていくため、関西の技術者コミュニティでの活動に積極的に取り組んでいます。
+    items:
+      - title: イベント
+        href: /service/grow/
+        brief: |
+          現場技術者・デザイナが多数参加するIT系コミュニティイベントの運営・支援を通じて、chatbox は高い技術力を維持し続けています。
+      - title: スクール
+        href: /service/grow/#school
+        brief: |
+          WEB デザインや WEB システム制作など、B2C や B2B を問わず幅広い領域で、高品質なWEB制作業務を提供し続けています。
+
+

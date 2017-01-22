@@ -1,0 +1,303 @@
+// サービス詳細ページ
+//
+// システム開発やWebデザイン等いくらか使う所。
+//
+// Styleguide 21.0
+
+// モデルケース
+//
+// システム開発のページで何回か使うやつ。
+// 構成は再考したほうがいいかも。
+//
+// Styleguide 21.1
+
+
+
+// 一番最初のところ
+//
+// 背景に画像を指定する前提
+//
+// Markup:
+// .p-serviceDetailHero
+//   .c-heading--h1
+//     h1.c-heading--h1_title システム開発
+//     p.c-heading--h1_subtitle 業務管理システムやBtoC向けシステムの開発
+//     p.c-heading--h1_titleEnglish SYSTEM DEVELOPMENT
+//     p.c-heading--h1_description 私は今どうしてもこの自覚ごとというのの時に考えならしい。何しろ今で応用式はざっとそうした真似たますでもよりさて下さいたがぞ尊敬聞いますですと、突然には行くですなだう。文学で起しべくのも断然事実が何しろあるだた。何だか向さんより評人そう成就が立ちませ個人この酒何か記憶にという同安住うだろででて、その場合も私か人達本にいうて、岡田さんののが内容の私がざっと小盲従とあるてそれ陰をご発展を切り上げようにともかく同仕事にすまましずて、ついに何だか納得をなるうているでし訳がいですう。
+//   .p-systemDevelopmentArea_category
+//     .l-category
+//       .l-category_item
+//         .c-heading--h4
+//           h4.c-heading--h4_title システム
+//           .c-heading--h4_border
+//         .l-category_itemDescription ろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむ
+//         a.l-category_itemButton.c-button--borderRed(href="#") 詳細を見る
+//       .l-category_item
+//         .c-heading--h4
+//           h4.c-heading--h4_title システム
+//           .c-heading--h4_border
+//         .l-category_itemDescription ろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむ
+//         a.l-category_itemButton.c-button--borderRed(href="#") 詳細を見る
+//
+// Styleguide 21.1.1
+
+.p-serviceDetailHero {
+  background-size: cover;
+  padding: 20px 20px 40px 20px;
+  &_category {
+    text-align: center;
+  }
+}
+
+// 大きなモジュール
+//
+//
+//
+// Markup:
+// .p-systemDetailArea
+//   .c-heading--h2
+//     h2.c-heading--h2_title 業務管理システム
+//     p.c-heading--h2_titleEnglish BUSINESS MANAGEMENT SYSTEM
+//     p.c-heading--h2_description ろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむろれむ
+//   .c-list
+//     p.c-list_label このようなことでお困りの場合はご相談下さい
+//     ul.c-list_area
+//       li.c-list_item Webにまつわる日頃のお悩みを・・・Webにまつわる日頃のお悩みを・・・Webにまつわる日頃のお悩みを・・・
+//       li.c-list_item Webにまつわる日頃のお悩みを・・・Webにまつわる日頃のお悩みを・・・Webにまつわる日頃のお悩みを・・・
+//   .p-systemModelCase
+//     .p-systemModelCase_label
+//       .p-systemModelCase_hr
+//       .p-systemModelCase_title モデルケース
+//       .p-systemModelCase_hr
+//     .p-systemModelCase_example
+//       .p-systemModelCase_element
+//         img.p-systemModelCase_image(src="http://placehold.it/20x20")
+//         p.p-systemModelCase_imageLabel 勤怠管理
+//       .p-systemModelCase_element
+//         img.p-systemModelCase_image(src="http://placehold.it/20x20")
+//         p.p-systemModelCase_imageLabel 勤怠管理
+//       .p-systemModelCase_element
+//         img.p-systemModelCase_image(src="http://placehold.it/20x20")
+//         p.p-systemModelCase_imageLabel 勤怠管理
+//   .p-systemTaskList
+//     p.p-systemTaskList_label このような課題へ導きます
+//     ul.p-systemTaskList_list
+//       li.p-systemTaskList_checkbox ✔
+//       li.p-systemTaskList_description Webにまつわる日頃の悩みや疑問、「Web制作」にまつわる思いに真摯に対応します
+//     ul.p-systemTaskList_list
+//       li.p-systemTaskList_checkbox ✔
+//       li.p-systemTaskList_description Webにまつわる日頃の悩みや疑問、「Web制作」にまつわる思いに真摯に対応します
+//     ul.p-systemTaskList_list
+//       li.p-systemTaskList_checkbox ✔
+//       li.p-systemTaskList_description Webにまつわる日頃の悩みや疑問、「Web制作」にまつわる思いに真摯に対応します
+//     a.p-systemTaskList_button.c-button(href="#") お問い合わせ
+//   .p-systemWorks
+//     .p-systemWorks_title.c-heading--h3
+//       h3.c-heading--h3_title 実績
+//       .c-heading--h3_border
+//     .l-works
+//       .l-works_examples
+//         .l-works_example
+//           img.l-works_exampleImage(src="http://placehold.it/20x20")
+//           .l-works_exampleTitle 勤怠管理システムの作成
+//           .l-works_exampleBorder
+//           .l-works_exampleDescription あなたは将来いやしくもある融通順というもののためを来るたで
+//         .l-works_example
+//           img.l-works_exampleImage(src="http://placehold.it/20x20")
+//           .l-works_exampleTitle 勤怠管理システムの作成
+//           .l-works_exampleBorder
+//           .l-works_exampleDescription あなたは将来いやしくもある融通順というもののためを来るたで
+//         .l-works_example
+//           img.l-works_exampleImage(src="http://placehold.it/20x20")
+//           .l-works_exampleTitle 勤怠管理システムの作成
+//           .l-works_exampleBorder
+//           .l-works_exampleDescription あなたは将来いやしくもある融通順というもののためを来るたで
+//     a.p-systemWorks_button.c-button--borderRed(href="#") 実績をさらに見る
+//
+// Styleguide 21.1.5
+.p-systemDetailArea {
+  /*deprecated*/
+  padding-bottom: 40px;
+}
+
+.p-serviceDetailArea {
+  padding-bottom: 40px;
+  background-position: right top;
+  background-size: 45%;
+  background-repeat:no-repeat;
+}
+
+.p-systemDetai_01 {
+  /*deprecated*/
+  background: url("/assets/images/dummy/servece_system01_bg.png") no-repeat;
+  background-position: right top;
+  background-size: 45%;
+}
+.p-systemDetai_02 {
+  /*deprecated*/
+  background: url("/assets/images/dummy/servece_system02_bg.png") no-repeat;
+  background-position: right top;
+  background-size: 35%;
+}
+
+
+/*
+ラベル
+
+最初に使うラベル部分。水平線はhrじゃないほうがよさげ。
+
+Markup:
+include /frontend/assets/tmpl/mixins/_service_detail.jade
++modelCase()
+
+Styleguide 21.1.2.
+*/
+.p-systemModelCase {
+  &_label {
+    text-align: center;
+    margin-top: 40px;
+  }
+  &_hr, &_title {
+    display: inline-block;
+  }
+  &_hr {
+    width: 28%;
+    min-width: 80px;
+    max-width: 300px;
+    border-bottom: 2px solid $clr-lightGray;
+  }
+  &_title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    @include mediaSp {
+      font-size: 1rem;
+    }
+  }
+  &_example {
+    //text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &_element {
+    //display: inline-block;
+    text-align: center;
+    width: 33%;
+
+    //padding-left: 1rem;
+    //padding-right: 1rem;
+    //@include mediaSp {
+    //  padding-left: 0;
+    //  padding-right: 0;
+    //}
+  }
+  &_image {
+    @include circle_container(100px);
+  }
+  &_imageLabel {
+    margin-top: 1rem;
+  }
+  @include mediaSp {
+    &_example {
+      max-width: 350px;
+      width: 95%;
+    }
+    &_image {
+      @include circle_container(80px);
+    }
+  }
+}
+
+/*
+課題リスト
+
+システム開発のページで何回か使うやつ。✔は仮。あとspの文字の大きさとか。
+
+Markup:
+include /frontend/assets/tmpl/mixins/_service_detail.jade
++solution()
+
+Styleguide 21.1.3.
+*/
+
+.p-systemTaskList {
+  background-color: $clr-extraLightGray2;
+  text-align: center;
+  &_label {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    @include mediaSp {
+      font-size: 1.1rem;
+    }
+  }
+  &_list {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: table;
+    line-height: 3rem;
+  }
+  &_checkbox {
+    display: table-cell;
+    vertical-align: middle;
+    width: 48px;
+    height: 40px;
+    background-color: $clr-lightGray;
+    color: white;
+    font-size: 1.5rem;
+  }
+  &_description {
+    display: table-cell;
+    text-align: left;
+    padding: 0.5rem 1rem;
+    line-height: 2rem;
+    background-color: white;
+  }
+  &_button {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+// 実績紹介のところ
+//
+//
+//
+// Markup:
+// include /frontend/assets/tmpl/mixins/_works.jade
+// -
+//   items = [
+//     {title:"勤怠管理システムの作成",brief:"案件の概要が入ります。案件の概要が入ります。案件の概要が入ります。案件の概要が入ります。",image: "http://placehold.it/320x180"},
+//     {title:"勤怠管理システムの作成",brief:"案件の概要が入ります。案件の概要が入ります。案件の概要が入ります。案件の概要が入ります。",image: "http://placehold.it/320x180"},
+//     {title:"勤怠管理システムの作成",brief:"案件の概要が入ります。案件の概要が入ります。案件の概要が入ります。案件の概要が入ります。",image: "http://placehold.it/320x180"},
+//   ]
+// .p-systemWorks
+//   .p-systemWorks_title.c-heading--h3
+//     h3.c-heading--h3_title 実績
+//     .c-heading--h3_border
+//   +works(items)
+//
+// Styleguide 21.1.4
+
+.p-systemWorks {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .c-heading--h3 {
+    padding-bottom: 1rem;
+  }
+  &_button {
+    margin-top: 40px;
+  }
+}
+
+
+

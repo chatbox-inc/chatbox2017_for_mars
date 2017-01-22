@@ -1,0 +1,62 @@
+// 404ページ
+div#404 {
+  background: red;
+  width:100%;
+  text-align: center;
+  .title {
+    font-size: 200px;
+    display: inline-block;
+  }
+}
+
+@import "node_modules/normalize.css/normalize.css";
+@import "./mixin.scss";
+@import "./reset.scss";
+@import "component/button";
+@import "component/heading";
+@import "component/label";
+@import "component/list";
+@import "layout/header";
+@import "layout/sidebar";
+@import "layout/footer";
+@import "layout/works";
+@import "layout/category";
+@import "layout/photos";
+@import "page/top";
+@import "page/service";
+@import "page/_service_detail";
+@import "page/about";
+@import "page/member";
+@import "page/memberPage";
+@import "page/contact";
+@import "page/404";
+
+body {
+  padding-top: 70px;
+  font-size: $fontSizeBase;
+  font-family: $fontFamilyBase;
+  font-weight: normal;
+}
+
+// スタイルガイドの一部でのみで使う背景
+.background {
+  background-color: $clr-extraLightGray;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-width: 980px;
+  max-width: 1200px;
+  @include mediaSp{
+    width: 100%;
+    min-width: 320px;
+    max-width: 100%;
+    padding: 0px 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+}
+

@@ -1,0 +1,121 @@
+$fontSizeBase: 14px;
+$fontFamilyBase: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+
+$clr-main: #d95f57;
+$clr-main--transrate: rgba(217, 95, 87, 0.9);
+$clr-main--font: #ba3a32;
+$clr-green: #13a27a;
+$clr-black: #332e2e;
+$clr-darkGray: #999999; //アイコン、線
+$clr-lightGray: #ccc8c8; //ヘッダーの英語のやつ
+$clr-extraLightGray: #e5e5e5; //？
+$clr-extraLightGray2: #f5f5f5; //背景
+$clr-facebook: #3b5998;
+$clr-twitter: #00aced;
+
+$mobile: 980px;
+
+$header-height: 70px;
+
+@mixin c-button_hover {
+  &:hover {
+    transition: all .4s;
+    background: lighten($clr-main, 10%);
+    color: white;
+  }
+}
+@mixin c-button--white_hover {
+  &:hover {
+    transition: all .4s;
+    background: $clr-main--font;
+    color: white;
+  }
+}
+@mixin c-button_container {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+  padding: 0.8rem 0;
+  width: 240px;
+}
+@mixin c-button_smallContainer {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 3px;
+  text-align: center;
+  padding: 0.6rem 1.5rem;
+  font-size: 0.8rem;
+}
+@mixin c-button_variableContainer {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+  padding: 0.8rem 0;
+  max-width: 240px;
+  width: 90%;
+}
+@mixin c-label_container {
+  display: inline-block;
+  line-height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-align: center;
+  color: white;
+}
+@mixin circle_container($value) {
+  width: $value;
+  height: $value;
+  border-radius: $value;
+}
+@mixin c-listStyle() {
+  &_item {
+    line-height: 2rem;
+    &:before {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      content: "●";
+      font-size: 0.5rem;
+      color: $clr-extraLightGray;
+    }
+  }
+}
+@mixin c-header--sp_container {
+  display: table-cell;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  font-size: 0.6rem;
+}
+@mixin p-topService_spElement($path) {
+  width: 80%;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  padding: 0 2em;
+  background: url($path) no-repeat;
+  //background: url("/assets/images/top/sp_create_bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+@mixin mediaSp(){
+  @media screen and (min-width: 0px) and (max-width: $mobile) {
+    @content
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    clear: both;
+    display: block;
+    content: '';
+  }
+}
+
+//@mixin pagelink {
+//  //margin-top:-$he$header-heightader-height;
+//  //padding-top:$header-height;
+//}

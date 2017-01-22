@@ -1,0 +1,44 @@
+mixin categoryBox(items)
+    .l-category
+        each item in items
+            .l-category_item
+                .c-heading--h4
+                    h4.c-heading--h4_title=item.title
+                    .c-heading--h4_border
+                .l-category_itemDescription=item.brief
+                a.l-category_itemButton.c-button--borderRed--variable(href=item.link.to)=item.link.label
+
+mixin modelCase(items)
+    -
+        items = items || [
+            {image:"http://placehold.it/80x80",title:"サンプルタイトル"},
+            {image:"http://placehold.it/80x80",title:"サンプルタイトル"},
+            {image:"http://placehold.it/80x80",title:"サンプルタイトル"},
+        ]
+    .p-systemModelCase
+        .p-systemModelCase_label
+            .p-systemModelCase_hr
+            .p-systemModelCase_title モデルケース
+            .p-systemModelCase_hr
+        .p-systemModelCase_example
+            each item in items
+                .p-systemModelCase_element
+                    img.p-systemModelCase_image(src=item.image)
+                    p.p-systemModelCase_imageLabel=item.title
+
+mixin solution(title,items)
+    -
+        title = title || "このような課題を解決へ導きます"
+        items = items || [
+            "サンプル文例1",
+            "サンプル文例2",
+            "サンプル文例3",
+        ]
+    .p-systemTaskList
+        p.p-systemTaskList_label=title
+        each item in items
+            ul.p-systemTaskList_list
+                li.p-systemTaskList_checkbox
+                    |<i class="fa fa-check" aria-hidden="true"></i>
+                li.p-systemTaskList_description=item
+        a.p-systemTaskList_button.c-button(href="/contact/") お問い合わせ

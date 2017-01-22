@@ -1,0 +1,89 @@
+// 実績紹介
+//
+// Styleguide 15.0
+
+// 実績紹介
+//
+// サイドバー
+//
+// Styleguide 15.1
+
+// 実績紹介
+//
+// ページ下部等に配置される案件紹介エリア
+//
+// Markup:
+// include /frontend/assets/tmpl/mixins/_works.jade
+// +works()
+//
+// Styleguide 15.1.1
+
+.l-works {
+  text-align: center;
+  &_examples {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    @include mediaSp {
+      display: block;
+    }
+  }
+  &_example {
+    display: table-cell;
+    width: 320px;
+    @include mediaSp{
+      display: block;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+  }
+  &_exampleImage {
+    width: 80%;
+    height: 180px;
+    @include mediaSp {
+      width: 30%;
+      height: auto;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+  .l-works_detail {
+    @include mediaSp {
+      display: inline-block;
+      width: 63%;
+      vertical-align: top;
+      margin-left: .5em;
+    }
+  }
+  &_exampleTitle {
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    //padding-bottom: .5rem;
+    @include mediaSp {
+      display: inline-block;
+      width: 100%;
+      padding-top: 0;
+      font-size: 1rem;
+    }
+  }
+  &_exampleBorder {
+    display: inline-block;
+    width: 80%;
+    border-bottom: 1px solid $clr-black;
+    @include mediaSp{
+      width:100%;
+    }
+  }
+  &_exampleDescription {
+    text-align: left;
+    font-size: .7rem;
+    padding-top: .5rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 1.3rem;
+    @include mediaSp {
+      padding: 0;
+    }
+  }
+}

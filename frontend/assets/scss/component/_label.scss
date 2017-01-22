@@ -1,0 +1,37 @@
+// ラベル
+//
+// Styleguide 3.0
+
+// ラベル
+//
+// トップページとpcのサイドバーで使う。widthは再考したほうがいいかも。
+//
+// Styleguide 3.1
+
+// ニュース
+//
+// サイドバーのときとサイズ感だけ違うから色とかだけをとりあえず共通に。
+//
+// Markup:
+// <div class="c-label--news">ニュース</div>
+//
+// Styleguide 3.1.1
+
+.c-label--news {
+  @include c-label_container;
+  background-color: $clr-main;
+}
+
+// イベント
+//
+// サイドバーのときとサイズ感だけ違うから色とかだけをとりあえず共通に。
+//
+// Markup:
+// <div class="c-label--event">イベント</div>
+//
+// Styleguide 3.1.2
+
+.c-label--event {
+  @include c-label_container;
+  background-color: $clr-green;
+}

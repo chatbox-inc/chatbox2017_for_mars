@@ -1,0 +1,71 @@
+members:
+  mikakane:
+    key: mikakane
+    name: 後藤 知宏
+    kana: goto tomohiro
+    role: 代表取締役
+    links:
+      twitter: https://twitter.com/_mikakane
+      facebook: https://facebook.com/
+      mail: t.goto@chatbox-inc.com
+    brief: |
+      株式会社chatbox代表。
+      大阪府立大学卒業後、フリーランスエンジニア等の経験を経て、株式会社chatboxを設立。
+      技術的な面だけでなく制作管理側の立て直しを得意とし、様々な制作現場でいわゆる「火消し役」として活動してきた。
+      関西のIT系コミュニティ活動への興味も深く、関西フロントエンドUGやlaravel.osaka などのコミュニティを立ち上げ、毎月様々なイベントを企画している。
+      現在は教育系の事業に力を入れており、自社主催のセミナー「Lec Cafe」や専門学校等の招待講師として教鞭を取る場面も
+    history:
+      - when: 1986/12
+        label: 誕生
+      - when: 2014/10
+        label: 株式会社chatbox 設立
+      - when: 2015/01
+        label: 関西最大級のフロントエンド技術者コミュニティ 関西フロントエンドUGを立ち上げ
+      - when: 2016/01
+        label: 本町にオフィスを移転し、ハンズオン形式の制作セミナー Lec Cafeをスタート
+      - when: 2016/12
+        label: スクール動員拡張のため、堺筋本町にオフィスを移転
+  yasui:
+    key: yasui
+    name: 安井 利紗
+    role: デザイナー
+    links:
+      twitter: https://twitter.com/_mikakane
+      facebook: https://facebook.com/
+      mail: t.goto@chatbox-inc.com
+    brief: |
+      chatbox デザイナー担当。
+      勉強会への参加をきっかけに、ベッドメイクの仕事からWebデザイナーへ転身。
+      美大出身の経歴を活かし、繊細な色使いを用いたデザインを得意とする。
+      システム制作の会社に入り、デザイン業務より情報設計など上流の工程に携わる事が多く、慣れない業務に日々奮闘中！
+      誰かデザインのお仕事下さい！！
+    history:
+      - when: 1993/01
+        label: 誕生
+      - when: 2016/01
+        label: 株式会社 chatbox 入社
+      - when: 2016/09
+        label: WordBench大阪にて登壇 「WordPressのためのGulpハンズオン」
+        link: https://wbosaka.connpass.com/event/40236/
+  shono:
+    key: shono
+    name: 庄埜 詩織
+    role: エンジニア
+    links:
+      twitter:
+      facebook: https://facebook.com/shiorishosho
+      mail: shosho@chatbox-inc.com
+    brief: |
+      大阪府出身。
+      学生時代に様々なWebサービスをユーザーとして利用することが多く、「プログラミングができたら何か面白いことができるんじゃないか」と考え、chatboxでアルバイトとして働きながらプログラミングを学び始める。
+      主に扱っている言語はPHP・JavaScript・jade・Sass、重点的に学習しているフレームワークはLaravel・Vue.jsなど。
+      教育事業に興味を持っていることもあり、プログラムを書くだけじゃない「話せるエンジニア」を目指して登壇やハンズオンも積極的に行っている。
+    history:
+      - when: 2016/03
+        label: 株式会社 chatbox 入社
+      - when: 2016/10
+        label: Laravel.Osaka \#8 登壇 「Laravel初心者向け ハンズオン」
+        link: https://laravel.connpass.com/event/41127/
+      - when: 2016/10
+        label: Laravel Osaka 2016 にて登壇 「Laravel5.3 の新機能」
+        link: http://php-jp.github.io/laravel-osaka-2016/

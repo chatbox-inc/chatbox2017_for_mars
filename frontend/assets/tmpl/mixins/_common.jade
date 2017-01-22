@@ -1,0 +1,58 @@
+mixin h1(title,subtitle,label,description,image)
+  .c-heading--h1
+    h1.c-heading--h1_title=title
+    p.c-heading--h1_subtitle: span=subtitle
+    p.c-heading--h1_titleEnglish=label
+    if description
+      p.c-heading--h1_description !{description.trim().replace(/\n/g, '<br/>')}
+    if image
+      div.c-heading--h1_image(style="background-image:url('#{image}')")
+        div.cartain
+        img(src=image,alt=title)
+
+// deprecated/
+mixin pageHeader(title,subtitle,label,description,image)
+  .c-heading--h1
+    h1.c-heading--h1_title=title
+    p.c-heading--h1_subtitle=subtitle
+    p.c-heading--h1_titleEnglish=label
+    if description
+      p.c-heading--h1_description=description
+    if image
+      p: img.c-heading--h1_image(src=image,alt=title)
+
+mixin h2(title,label,description,image)
+  .c-heading--h2
+    h2.c-heading--h2_title=title
+    p.c-heading--h2_titleEnglish=label
+    if description
+      p.c-heading--h2_description !{description.trim().replace(/\n/g, '<br/>')}
+    if image
+      img.c-heading--h2_image(src=image,alt=title)
+
+mixin h3(title)
+  .c-heading--h3
+    h3.c-heading--h3_title=title
+    .c-heading--h3_border
+
+
+mixin btn-default(title,href)
+  a.c-button--borderRed(href=href)=title
+
+
+
+
+
+mixin list(list,description)
+  .c-list
+    p.c-list_label このようなことでお困りの場合はご相談下さい
+    ul.c-list_area
+      each item in list
+        li.c-list_item=item
+
+mixin photos(photos)
+  .l-photos
+    each item in photos
+      .l-photos_item
+        img(src=item)
+

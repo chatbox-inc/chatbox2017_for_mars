@@ -1,0 +1,47 @@
+// リスト
+//
+// Styleguide 4.0
+
+// リスト
+//
+// シンプルなリストスタイルです。
+//
+// Styleguide 4.1
+
+// 標準
+//
+//
+//
+// Markup:
+// .c-list
+//   ul.c-list_area
+//     li.c-list_item Webサイト制作
+//     li.c-list_item Webシステム開発
+//
+// Styleguide 4.1.1
+
+.c-list { //ラベルなし
+  @include c-listStyle;
+}
+
+// ラベル付きの付きのリスト
+//
+//
+//
+// Markup:
+// .c-list
+//   p.c-list_label このようなことでお困りの場合はご相談下さい
+//   ul.c-list_area
+//     li.c-list_item Webにまつわる日頃のお悩みを・・・Webにまつわる日頃のお悩みを・・・Webにまつわる日頃のお悩みを・・・
+//     li.c-list_item Webにまつわる日頃のお悩みを・・・Webにまつわる日頃のお悩みを・・・Webにまつわる日頃のお悩みを・・・
+//
+// Styleguide 4.1.2
+
+.c-list {
+  &_label {
+    font-size: 1.1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+

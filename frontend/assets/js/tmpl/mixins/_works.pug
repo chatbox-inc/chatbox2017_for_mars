@@ -1,0 +1,17 @@
+mixin works(items)
+  -
+    items = items || [
+      {image:"/assets/images/top/work1.jpg",title:"サンプルタイトル",brief:"案件の概要案件の概要案件の概要案件の概要案件の概要案件の概要案件の概要案件の概要"},
+      {image:"/assets/images/top/work1.jpg",title:"サンプルタイトル",brief:"案件の概要案件の概要案件の概要案件の概要案件の概要案件の概要案件の概要案件の概要"},
+      {image:"/assets/images/top/work1.jpg",title:"サンプルタイトル",brief:"案件の概要案件の概要案件の概要案件の概要案件の概要案件の概要案件の概要案件の概要"},
+    ]
+
+  .l-works
+   .l-works_examples
+     each item in items
+       .l-works_example
+         img.l-works_exampleImage(src=item.image)
+         .l-works_detail
+           .l-works_exampleTitle=item.title
+           .l-works_exampleBorder
+           .l-works_exampleDescription=item.brief

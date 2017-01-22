@@ -1,0 +1,19 @@
+mixin ogp(title,description,image,keyword,url)
+  - title = title + "| 株式会社 chatbox(チャットボックス)"
+  - image = image || "http://chatbox-inc.com/assets/images/ogp.png"
+  - keyword = ["大阪","Web制作","技術顧問","イベント","PHP","フロントエンド","株式会社chatbox","チャットボックス"].concat(keyword).join()
+  title=title
+  meta(name="description", content=description)
+  meta(name="keywords", content=keyword)
+  meta(property="og:type", content="website")
+  meta(property="og:url", content=url)
+  meta(property="og:title", content=title)
+  meta(property="og:image", content=image)
+  meta(property="og:description", content=description)
+  meta(name="twitter:card", content="summary_large_image")
+  meta(name="twitter:site", content="@frontkansai")
+  meta(name="twitter:creator", content="@frontkansai")
+  meta(name="twitter:title", content=title)
+  meta(name="twitter:description", content=description)
+  meta(name="twitter:image", content=image)
+  include jsonld.html

@@ -1,0 +1,18 @@
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: $clr-black;
+}
+
+a.link {
+  color: $clr-main;
+  display: inline-block;
+  line-height: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}

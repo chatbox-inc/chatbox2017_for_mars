@@ -1,0 +1,133 @@
+// ボタン
+//
+// Styleguide 1.0
+
+// ボタン
+//
+// aタグ
+//
+// Styleguide 1.1
+
+// 標準
+//
+//
+//
+// Markup:
+// a.c-button(href="#") お問い合わせ
+//
+// Styleguide 1.1.1
+
+.c-button {
+  @include c-button_container;
+  @include c-button_hover;
+  box-sizing: border-box;
+  background-color: $clr-main--font;
+  color: white;
+}
+
+// ボーダーが赤のボタン
+//
+//
+//
+// Markup:
+// a.c-button--borderRed(href="#") 詳細をみる
+//
+// Styleguide 1.1.2
+
+.c-button--borderRed {
+  @include c-button_container;
+  @include c-button_hover;
+  background-color: white;
+  border: 1px solid $clr-main--font;
+  color: $clr-main--font;
+
+}
+
+// 背景が赤のときのボタン
+//
+// 基本フッターの「お問い合わせ」部分だけでしか使わない。（.backgroundはわかりやすくするためつけているだけなので不要）
+//
+// Markup:
+// .background
+//   a.c-button--white(href="#") お問い合わせはこちら
+//
+// Styleguide 1.1.3
+
+.background {
+  /*この辺は不要*/
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.c-button--white {
+  @include c-button_container;
+  @include c-button--white_hover;
+  background-color: white;
+  color: $clr-main--font;
+}
+
+// 小さめのボタン
+//
+// 横幅は可変。
+//
+// Markup:
+// a.c-button--small(href="#") MAP
+//
+// Styleguide 1.1.4
+
+.c-button--small {
+  @include c-button_smallContainer;
+  @include c-button_hover;
+  background-color: $clr-main--font;
+  color: white;
+}
+
+// 小さめのボタン（ボーダーが赤のボタン）
+//
+// 横幅は可変。
+//
+// Markup:
+// a.c-button--borderRed--small(href="#") MAPをみる
+//
+// Styleguide 1.1.5
+
+.c-button--borderRed--small {
+  @include c-button_smallContainer;
+  @include c-button_hover;
+  background-color: white;
+  border: 1px solid $clr-main--font;
+  color: $clr-main--font;
+}
+
+// 標準（可変）
+//
+// 高さは標準そのまま。
+//
+// Markup:
+// a.c-button--small(href="#") MAP
+//
+// Styleguide 1.1.6
+
+.c-button--variable {
+  @include c-button_variableContainer;
+  @include c-button_hover;
+  background-color: $clr-main--font;
+  color: white;
+}
+
+// 標準（可変、ボーダーが赤のボタン）
+//
+// 高さは標準そのまま。
+//
+// Markup:
+// a.c-button--borderRed--small(href="#") MAPをみる
+//
+// Styleguide 1.1.7
+
+.c-button--borderRed--variable {
+  @include c-button_variableContainer;
+  @include c-button_hover;
+  background-color: white;
+  border: 1px solid $clr-main--font;
+  color: $clr-main--font;
+}
