@@ -1,6 +1,6 @@
 <script>
     import templateParser from "./pageTemplateLoader"
-    const template = templateParser(require("../tmpl/page/index.pug"))
+    const template = templateParser(require("../tmpl/page/service_grow.pug"))
 
     export default {
         template,

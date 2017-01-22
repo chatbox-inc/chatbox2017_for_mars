@@ -1,6 +1,6 @@
 <script>
     import templateVariables from "../templateVariables"
-    const template = require("../tmpl/_header.jade")(templateVariables)
+    const template = require("../tmpl/_header.pug")(templateVariables)
     export default {
         template,
         name: 'appHeader',

@@ -1,0 +1,32 @@
+include ../mixins/_common.pug
+include ../mixins/_works.pug
+include ../mixins/_service_detail.pug
+div.l-sidebarContainer
+    div.l-sidebarContent
+        .p-serviceDetailHero(style="background-image:url('"+"enhance.hero.bg"+"')")
+            +h1(enhance.hero.title,enhance.hero.subtitle,enhance.hero.label,enhance.hero.brief)
+            .p-serviceDetailHero_category
+                +categoryBox(enhance.hero.category)
+
+        #sec_adviser.p-serviceDetailArea(style="background-image:url('"+enhance.adviser.bg+"')")
+            +h2(enhance.adviser.title,enhance.adviser.label,enhance.adviser.brief)
+            +list(enhance.adviser.tasks,"このようなことでお困りの場合はご相談下さい")
+            +modelCase(enhance.adviser.model)
+            +solution(enhance.adviser.point.label,enhance.adviser.point.items)
+            //.p-systemWorks
+            //    +h3("実績")
+            //    +works()
+            //    div.p-systemWorks_button: +btn-default("実績をさらに見る","/works/")
+        #sec_seminor.p-serviceDetailArea(style="background-image:url('"+enhance.seminor.bg+"')")
+            +h2(enhance.seminor.title,enhance.seminor.label,enhance.seminor.brief)
+            +list(enhance.seminor.tasks,"このようなことでお困りの場合はご相談下さい")
+            //+modelCase(enhance.seminor.model)
+            +solution(enhance.seminor.point.label,enhance.seminor.point.items)
+            //.p-systemWorks
+            //    +h3("実績")
+            //    +works()
+            //    div.p-systemWorks_button: +btn-default("実績をさらに見る","/works/")
+        include ../include/_service_map.pug
+        br
+        br
+    include ../_sidebar.pug

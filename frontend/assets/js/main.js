@@ -12,6 +12,11 @@ const router = new VueRouter({
     routes // routes: routes の短縮表記
 })
 
+router.beforeEach((to,from,next)=>{
+    window.scroll(0,0)
+    next();
+})
+
 
 new Vue({
   el: '#app',

@@ -20,26 +20,26 @@
 
 
         .l-header_naviArea
-            a.l-header_navi(href="/")
+            router-link.l-header_navi(to="/")
                 p.l-header_naviTitleEnglish TOP
                 p.l-header_naviTitle トップページ
-            a.l-header_navi(href="/service/")
+            router-link.l-header_navi(to="/service/")
                 p.l-header_naviTitleEnglish SERVICE
                 p.l-header_naviTitle サービスについて
-            a.l-header_navi(href="/member/")
+            router-link.l-header_navi(to="/member/")
                 p.l-header_naviTitleEnglish MEMBER
                 p.l-header_naviTitle 社内紹介
             //a.l-header_navi(href="/")
             //    p.l-header_naviTitleEnglish EVENT & NEWS
             //    p.l-header_naviTitle 広報一覧
-            a.l-header_navi(href="/about/")
+            router-link.l-header_navi(to="/about/")
                 p.l-header_naviTitleEnglish ABOUT
                 p.l-header_naviTitle 会社概要
-            a.l-header_navi(href="/contact/")
+            router-link.l-header_navi(to="/contact/")
                 p.l-header_naviTitleEnglish CONTACT
                 p.l-header_naviTitle お問合わせ
     .l-header_spNaviArea
-        a.l-header_spNavi(href="/")
+        router-link.l-header_spNavi(to="/")
             span.ttl_en TOP　
             span.ttl_ja トップページ
         a.l-header_spNavi(href="/service/")

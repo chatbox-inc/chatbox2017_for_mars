@@ -39,14 +39,6 @@ module.exports = {
       {
           test: /\.(pug|jade)$/,
           loader: 'pug-loader',
-          options:{
-            globals:{
-              common:{
-                postal: "",
-                address: ""
-              }
-            }
-          }
       }
     ]
   },

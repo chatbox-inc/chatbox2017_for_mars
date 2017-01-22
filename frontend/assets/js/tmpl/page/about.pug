@@ -1,0 +1,72 @@
+include ../mixins/_common.pug
+.l-sidebarContainer
+    .l-sidebarContent
+        +h1("会社概要","chatboxについて","about",
+        "chatbox は 2016年 10月をもって 3年目を迎えることとなりました。" +
+        "\n日々変化する情報技術の中でも変わらない「人と人とのコミュニケーション」を大切に。"+
+        "\n今後もWeb制作を始め、技術顧問やイベント活動等を通じて、Webの技術をたくさんの現場に届ける活動を進めていきます。" +
+        "\n「作る」だけでなく、「伝え合う」事に取り組みたい。" +
+        "\n株式会社chatboxはWebの「 これから」を語り合う会社です。",
+        "/assets/images/about/top.jpg"
+        )
+
+        .aboutContentsArea_companyProfile
+            .p-aboutProfileArea
+                .c-heading--h2
+                    h2.c-heading--h2_title 会社情報
+                    p.c-heading--h2_titleEnglish company profile
+
+                .p-companyProfile
+                    .p-companyProfile_table
+                        .p-companyProfile_tableTr
+                            .p-companyProfile_label 会社名
+                            .p-companyProfile_info 株式会社 chatbox
+                        .p-companyProfile_tableTr
+                            .p-companyProfile_label 代表
+                            .p-companyProfile_info 後藤 知宏
+                        .p-companyProfile_tableTr
+                            .p-companyProfile_label 所在地
+                            .p-companyProfile_info
+                                p.p-companyProfile_address 〒 #{common.postal} #{common.address}
+                                a.p-companyProfile_button.c-button--borderRed--small(href="#sec_map") Mapをみる
+                        .p-companyProfile_tableTr
+                            .p-companyProfile_label 創立
+                            .p-companyProfile_info 2014年 10月 2日
+                        //.p-companyProfile_tableTr
+                        //    .p-companyProfile_label 資本金
+                        //    .p-companyProfile_info 30万
+                        .p-companyProfile_tableTr
+                            .p-companyProfile_label 事業内容
+                            .p-companyProfile_info Web制作 / IT教育
+                        .p-companyProfile_tableTr
+                            .p-companyProfile_label 従業員数
+                            .p-companyProfile_info 3名
+
+        #sec_map.aboutContentsArea_access
+            .p-aboutAccessArea
+                .c-heading--h2
+                    h2.c-heading--h2_title アクセス
+                    p.c-heading--h2_titleEnglish map
+
+                .p-accesss
+                    <div id="map_app" style="width:100%;height:400px;"></div>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDl10NHGUS33kEc-XP4ItJyTsSOUX3S8PQ&callback=initMap"></script>
+                    .p-access_infoArea
+                        .p-access_info
+                            .p-access_infoTitle 株式会社chatbox
+                            .p-access_infoText
+                            |〒#{common.postal}
+                            br
+                            | #{common.address}
+
+                        .p-access_info
+                            .p-access_infoTitle アクセス
+                            .p-access_infoText
+                            |大阪市営地下鉄「堺筋本町」駅 3号出入口より徒歩3分
+                            br
+                            |大阪市営地下鉄「本町」駅 11号出入口より徒歩10分
+                            br
+                            |大阪市営地下鉄「松屋町」駅 1号出入口より徒歩10分
+
+                    a.p-access_button.c-button--borderRed(href=common.googlemap,target="_blank") Google Mapで開く
+    include ../_sidebar.pug

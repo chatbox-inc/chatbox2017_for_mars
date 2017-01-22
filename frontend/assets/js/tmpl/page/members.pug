@@ -1,0 +1,77 @@
+include ../mixins/_common.pug
+.member
+    +h1("chatbox","chatboxでの働き方","member",
+        "chatboxはWeb制作を中心に、技術顧問等の制作指導やイベント運営スクール等を行う会社です。"+
+        "\n日々変化するWeb制作の関連技術を柔軟に吸収できるよう、「おもしろい」や「かわいい」といったことも気軽に紹介し合うような空気感を大事にしています。" +
+        "\n「ただ作るだけじゃおもしろくないな〜」" +
+        "\nそんな子供のようなワクワク感を忘れないメンバーが揃っています。",
+        "/assets/images/member/top.png"
+    )
+    .member_work
+        +h2("chatboxの働き方","our work & our style",
+            "「性格や得意分野が違うメンバーが集まるからこそできることもあるはず」" +
+            "\nそう考えるメンバーが集まっているので、自然と社内ではエンジニアもデザイナーも気軽に質問したり教え合ったりしています。" +
+            "\nバランスのとれた仕事の進め方をできることがchatboxの強みです。"
+        )
+        +photos([
+            "/assets/images/member/photo1.jpg",
+            "/assets/images/member/photo2.jpg",
+            "/assets/images/member/photo3.jpg",
+            "/assets/images/member/photo4.jpg"
+        ])
+
+    #sec_member.member_members
+        .p-memberMembersArea
+            +h2("メンバー","member",
+                "chatboxでは、少数のエンジニアやデザイナーとともに、日々制作活動を行っています。" +
+                "\n最先端のWeb制作技術やコミュニティ活動に興味・関心を持ち、新しい技術を怖がらないエンジニア・デザイナーでいたいと思っています。"
+            )
+            .p-members
+                a.p-members_element(href="/member/mikakane/")
+                    img.p-members_elementImage(src="/assets/images/member/mikakane_circle.jpg")
+                    .p-members_elementName.c-heading--h4
+                        h4.c-heading--h4_title 後藤知宏
+                        .c-heading--h4_border
+                    p.p-members_elementPosition 代表取締役
+                a.p-members_element(href="/member/yasui/")
+                    img.p-members_elementImage(src="/assets/images/member/yasui_circle.jpg")
+                    .p-members_elementName.c-heading--h4
+                        h4.c-heading--h4_title 安井 利紗
+                        .c-heading--h4_border
+                    p.p-members_elementPosition デザイナー
+                a.p-members_element(href="/member/shono/")
+                    img.p-members_elementImage(src="/assets/images/member/shono_circle.jpg")
+                    .p-members_elementName.c-heading--h4
+                        h4.c-heading--h4_title 庄埜 詩織
+                        .c-heading--h4_border
+                    p.p-members_elementPosition エンジニア
+                a.p-members_element()
+                    img.p-members_elementImage(src="/assets/images/member/amy_circle.jpg")
+                    .p-members_elementName.c-heading--h4
+                        h4.c-heading--h4_title エイミー
+                        .c-heading--h4_border
+                    p.p-members_elementPosition 秘書
+
+    .member_jobOffer
+        .p-memberJobOfferArea
+            .c-heading--h2
+                h2.c-heading--h2_title 求人に関して
+                p.c-heading--h2_titleEnglish Join to chatbox
+
+            .p-memberJobOfferArea_backgroundImage
+                p.p-memberJobOfferArea_description
+                    | chatbox が目指すオフィス作りは「それぞれがスキルアップするためのプラットフォーム」です。
+                    br
+                    | 困った事を気軽に相談しあえる環境や、新しい技術を身につけるためのイベントなど、スキルアップに必要な全てがchatboxにあります。
+                    br
+                    br
+                    | 「最新のWeb制作技術を学びたい！」「コミュニティ活動に参加したい！」という方であれば、学生でも大歓迎！
+                    br
+                    | 自分で決めた目標に対して、積極的にスキルアップを目指していける方からの求人申込を随時募集しております。
+                    br
+                    | 転職・就活に向けてのインターンも歓迎！ ポートフォリオ制作のサポートをさせていただきます。
+                    br
+                    br
+                    | chatboxでの制作・スキルアップに興味があるという方は、簡単なプロフィール等を添えてお問い合わせフォームよりご連絡下さい。
+                router-link.p-memberJobOfferArea_button.c-button--borderRed(to="/contact/") 問い合わせる
+
